@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ChildGoods extends Model
 {
@@ -12,5 +13,14 @@ class ChildGoods extends Model
     protected $fillable = [
         'product_child',
     ];
+
+    /**
+     * Relation to model categories
+     * @return BelongsTo
+     */
+    public function relationTo(): BelongsTo
+    {
+        return $this->belongsTo(CategoriesGoods::class);
+    }
 
 }
