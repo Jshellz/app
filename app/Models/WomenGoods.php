@@ -11,7 +11,8 @@ class WomenGoods extends Model
     use HasFactory;
 
     protected $fillable = [
-        'product_women',
+        'name',
+        'price',
     ];
 
     /**

@@ -11,7 +11,8 @@ class ChildGoods extends Model
     use HasFactory;
 
     protected $fillable = [
-        'product_child',
+        'name',
+        'price',
     ];
 
     /**

@@ -12,6 +12,7 @@ class BrandGoods extends Model
 
     protected $fillable = [
         'title',
+        'price',
         'quality',
     ];
 
